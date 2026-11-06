@@ -2,8 +2,6 @@
 node_modules/
 
 # Local credentials and environment overrides must never be committed.
-.env
-.env.*
 .npmrc
 *.pem
 *.key
@@ -19,3 +17,4 @@ template/*/qa/
 
 # Local acceptance evidence may contain workspace or conversation data.
 artifacts/
+config.bat
