@@ -1,6 +1,6 @@
 {
   "name": "@zseven-w/dsh-game-studio",
-  "version": "0.1.0-rc.2",
+  "version": "0.1.0-rc.3",
   "description": "Game studio for DeepSeek Harness: describe a small game, play it in the right sidebar, and swap its art for your own generated assets.",
   "license": "MIT",
   "repository": {
@@ -44,7 +44,7 @@
     "node": ">=24.11.0"
   },
   "scripts": {
-    "build": "node scripts/build.mjs",
+    "build": "node init && node scripts/build.mjs",
     "test": "node --test test/*.test.mjs"
   },
   "dsh": {
@@ -91,6 +91,8 @@
     }
   },
   "dependencies": {
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "playwright-core": "1.64.1",
     "pngjs": "^7.0.0",
     "undici": "^7.30.1"
